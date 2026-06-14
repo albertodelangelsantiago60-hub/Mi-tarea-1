@@ -1,313 +1,62 @@
-   <link rel="stylesheet" href="styles.css">
-<!DOCTYPE html> 
-<!-- DOCTYPE: Declara que el documento usa HTML5 -->
+body {
+    background-color: #E6F7FF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
 
-<html lang="es"> 
-<!-- html: Etiqueta raíz. lang="es" indica que el idioma es español -->
+nav {
+    margin: 20px 0;
+}
 
-<head> 
-<!-- head: Contiene metadatos y estilos que no se ven en la página -->
-    
-    <meta charset="UTF-8"> 
-    <!-- meta: Define la codificación para que los acentos y la ñ se vean bien -->
-    
-    <title>El PET en Veracruz</title> 
-    <!-- title: Texto que aparece en la pestaña del navegador -->
-    
-    <style> 
-    /* style: Aquí va todo el CSS. Está dentro del HTML para que sea un solo archivo */
-        
-        body {
-            background-color: #E6F7FF; /* Color de fondo azul claro */
-            font-family: Arial, sans-serif; /* Tipo de letra legible */
-            margin: 0; /* Quita el margen por defecto del navegador */
-            padding: 20px; /* Agrega espacio interno para que el contenido no toque los bordes */
-            text-align: center; /* Centra todo el texto por defecto */
-        }
+nav a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #004080;
+}
 
-        nav {
-            margin: 20px 0; /* Espacio arriba y abajo del menú */
-        }
+section {
+    text-align: left;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #B3D9FF;
+}
 
-        nav a {
-            margin: 0 8px; /* Espacio entre cada enlace */
-            text-decoration: none; /* Quita el subrayado de los enlaces */
-            color: #004080; /* Color azul oscuro para los enlaces */
-        }
+h1 {
+    color: #003366;
+}
 
-        section {
-            text-align: left; /* Alinea el texto de las secciones a la izquierda para mejor lectura */
-            max-width: 900px; /* Limita el ancho para que no se estire demasiado en pantallas grandes */
-            margin: 30px auto; /* Centra la sección y agrega espacio arriba y abajo */
-            padding: 15px; /* Espacio interno dentro de cada sección */
-            background-color: #FFFFFF; /* Fondo blanco para que resalte sobre el body */
-            border: 1px solid #B3D9FF; /* Borde azul claro alrededor de la sección */
-        }
+h2 {
+    color: #004080;
+}
 
-        h1 {
-            color: #003366; /* Color azul oscuro para el título principal */
-        }
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
 
-        h2 {
-            color: #004080; /* Color azul medio para los subtítulos */
-        }
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
 
-        img {
-            display: block; /* Convierte la imagen en un elemento de bloque */
-            margin: 20px auto; /* Centra la imagen horizontalmente */
-            max-width: 100%; /* Evita que la imagen sea más ancha que su contenedor */
-        }
+th, td {
+    border: 1px solid #004080;
+    padding: 10px;
+    text-align: left;
+}
 
-        table {
-            border-collapse: collapse; /* Une los bordes de las celdas para que se vean limpios */
-            width: 80%; /* La tabla ocupa el 80% del ancho de su contenedor */
-            margin: 20px auto; /* Centra la tabla */
-        }
+th {
+    background-color: #CCE5FF;
+}
 
-        th, td {
-            border: 1px solid #004080; /* Borde azul para cada celda */
-            padding: 10px; /* Espacio interno dentro de cada celda */
-            text-align: left; /* Alinea el texto de las celdas a la izquierda */
-        }
-
-        th {
-            background-color: #CCE5FF; /* Fondo azul claro para los encabezados de la tabla */
-        }
-
-        footer {
-            margin-top: 40px; /* Espacio arriba del pie de página */
-            font-size: 14px; /* Tamaño de letra más pequeño */
-            color: #555; /* Color gris para el texto del footer */
-        }
-    </style>
-    
-</head> 
-
-<body> 
-<!-- body: Contiene todo lo visible de la página. El color de fondo ya lo maneja el CSS -->
-
-    <h1>Uso del PET en el Estado de Veracruz</h1> 
-    <!-- h1: Encabezado principal. El más grande e importante -->
-
-    <!-- BARRA DE NAVEGACIÓN -->
-    <nav> 
-    <!-- nav: Agrupa los enlaces de navegación para mover al usuario entre secciones -->
-        
-        <a href="#impacto">Impacto Ambiental</a> | 
-        <!-- a: Crea un enlace. href="#impacto" salta a la sección con id="impacto" -->
-        
-        <a href="#reciclaje">Reciclaje</a> | 
-        <a href="#versatilidad">Versatilidad</a> | 
-        <a href="#proceso">Proceso</a> | 
-        <a href="#alternativa">Alternativa</a> | 
-        <a href="#oceano">Contaminación</a> | 
-        <a href="#innovacion">Innovación</a> | 
-        <a href="#social">Iniciativas</a>
-        
-    </nav>
-
-    <hr> 
-    <!-- hr: Dibuja una línea horizontal para separar secciones -->
-
-    <!-- SECCIÓN 1: IMPACTO AMBIENTAL -->
-    <section id="impacto"> 
-    <!-- section: Agrupa contenido relacionado. id="impacto" sirve para el enlace del menú -->
-        
-        <h2>Impacto Ambiental y Persistencia</h2> 
-        <!-- h2: Subtítulo. Jerarquía menor que h1 -->
-        
-        <p> 
-        <!-- p: Define un párrafo de texto -->
-            El PET, o Tereftalato de Polietileno, es el plástico más usado en botellas de agua y refresco en Veracruz. 
-            Su principal problema ambiental es su <b>alta persistencia</b>. 
-            <!-- b: Pone el texto en negrita para resaltar -->
-            Una botella de PET puede tardar entre 100 y 1000 años en degradarse en un tiradero a cielo abierto.
-        </p>
-        
-        <p>
-            En Veracruz, el mal manejo del PET genera:
-        </p>
-        
-        <ul> 
-        <!-- ul: Crea una lista desordenada con viñetas -->
-            <li>Obstrucción de drenajes y ríos durante lluvias, aumentando inundaciones en zonas como Coatzacoalcos.</li> 
-            <!-- li: Cada elemento de la lista -->
-            <li>Contaminación del suelo, ya que el PET libera microplásticos y químicos al degradarse lentamente.</li>
-            <li>Riesgo para la fauna: animales marinos y terrestres confunden el PET con alimento.</li>
-        </ul>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Pet_bottles.jpg" width="400" alt="Botellas de PET apiladas"> 
-        <!-- img: Inserta una imagen.
-             src: Ruta o URL de la imagen.
-             width: Ancho en pixeles.
-             alt: Texto alternativo si la imagen no carga -->
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 2: RECICLAJE -->
-    <section id="reciclaje">
-        
-        <h2>Reciclaje y Economía Circular</h2>
-        
-        <p>
-            El reciclaje del PET en Veracruz permite cerrar el ciclo de vida del material. Esto se llama 
-            <i>Economía Circular</i>. 
-            <!-- i: Pone el texto en cursiva para enfatizar -->
-            En lugar de tirar la botella, se convierte en materia prima para nuevos productos.
-        </p>
-        
-        <p>
-            Beneficios del reciclaje de PET en el estado:
-        </p>
-        
-        <ol> 
-        <!-- ol: Crea una lista ordenada con números -->
-            <li>Reduce el volumen de basura en rellenos sanitarios como el de Xalapa.</li>
-            <li>Ahorra energía: producir PET reciclado gasta 60% menos energía que producir PET nuevo.</li>
-            <li>Genera empleos en centros de acopio y plantas recicladoras en Veracruz y Boca del Río.</li>
-        </ol>
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 3: VERSATILIDAD -->
-    <section id="versatilidad">
-        
-        <h2>Versatilidad Industrial</h2>
-        
-        <p>
-            El PET reciclado en Veracruz tiene múltiples usos industriales. No se desperdicia:
-        </p>
-        
-        <ul>
-            <li><b>Fibras textiles:</b> Se usa para hacer tela de ropa deportiva y cobertores.</li>
-            <li><b>Envases nuevos:</b> Botellas nuevas contienen hasta 30% de PET reciclado.</li>
-            <li><b>Construcción:</b> Se usa en tabiques ecológicos y aislantes térmicos.</li>
-        </ul>
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 4: PROCESO + TABLA -->
-    <section id="proceso">
-        
-        <h2>El Proceso de Reciclaje del PET</h2>
-        
-        <p>
-            Así es como una botella de PET se transforma en Veracruz:
-        </p>
-        
-        <table> 
-        <!-- table: Crea una tabla. El estilo de bordes y centrado viene del CSS -->
-            
-            <tr> 
-            <!-- tr: Define una fila de la tabla -->
-                <th>Etapa</th> 
-                <!-- th: Celda de encabezado. Texto en negrita y con fondo diferente -->
-                <th>Descripción</th>
-            </tr>
-            
-            <tr>
-                <td>1. Recolección</td> 
-                <!-- td: Celda normal de datos -->
-                <td>Se recolecta en centros de acopio, escuelas y programas municipales.</td>
-            </tr>
-            
-            <tr>
-                <td>2. Lavado</td>
-                <td>Se quitan etiquetas, tapas y residuos de líquido.</td>
-            </tr>
-            
-            <tr>
-                <td>3. Triturado</td>
-                <td>Las botellas se muelen hasta convertirse en pequeñas hojuelas.</td>
-            </tr>
-            
-            <tr>
-                <td>4. Transformación</td>
-                <td>Las hojuelas se funden para crear fibra, láminas o botellas nuevas.</td>
-            </tr>
-            
-        </table>
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 5: ALTERNATIVA -->
-    <section id="alternativa">
-        
-        <h2>Alternativa a Otros Materiales</h2>
-        
-        <p>
-            El PET es una <u>mejor alternativa</u> 
-            <!-- u: Subraya el texto -->
-            que el vidrio en muchos casos porque es más ligero, lo que reduce el consumo de gasolina en el transporte.
-            También es más seguro porque no se rompe como el vidrio en escuelas y playas de Veracruz.
-        </p>
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 6: CONTAMINACIÓN OCEÁNICA -->
-    <section id="oceano">
-        
-        <h2>Contaminación Oceánica</h2>
-        
-        <p>
-            Una parte del PET que no se recicla en Veracruz llega al Golfo de México a través de ríos como el Papaloapan.
-            Esto daña arrecifes y afecta la pesca. Las tortugas marinas de las playas de Tecolutla confunden bolsas y botellas con medusas.
-        </p>
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 7: INNOVACIÓN -->
-    <section id="innovacion">
-        
-        <h2>Innovación Veracruzana</h2>
-        
-        <p>
-            En Veracruz hay proyectos nuevos. La Universidad Veracruzana investiga cómo convertir PET en filamento para impresoras 3D.
-            Empresas locales también hacen ladrillos y mobiliario urbano con PET reciclado.
-        </p>
-        
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 8: INICIATIVAS SOCIALES -->
-    <section id="social">
-        
-        <h2>Iniciativas Sociales y Educativas en el Estado</h2>
-        
-        <p>
-            Existen programas como “Recicla por tu Escuela” en Xalapa, donde los alumnos juntan PET para intercambiarlo por materiales escolares.
-            También hay cooperativas en Veracruz Puerto que compran PET a pepenadores para darle valor económico al residuo.
-        </p>
-        
-        <p>
-            Para más información visita: 
-            <a href="https://www.veracruz.gob.mx/medioambiente/" target="_blank">Secretaría de Medio Ambiente de Veracruz</a>
-            <!-- target="_blank" abre el enlace en una pestaña nueva -->
-        </p>
-        
-    </section>
-
-    <hr>
-
-    <footer> 
-    <!-- footer: Define el pie de página -->
-        <p><small>Proyecto de Bachillerato - Materia de Informática - 2025</small></p> 
-        <!-- small: Reduce el tamaño del texto -->
-    </footer>
-
-</body> 
-
-</html>
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}                       
